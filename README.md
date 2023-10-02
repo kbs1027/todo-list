@@ -22,7 +22,7 @@
   
   ![ff](https://github.com/Untoc-Web-Develop/todo-list/assets/51306225/a2e337bf-9094-49dd-8167-fecbd268d315)
 
-### 4. Action이 완료되면 gh-pages 브렌치생성
+### 4. Action이 완료되면 gh-pages 브렌치 생성
 
 ### 5. Pages 설정
 
