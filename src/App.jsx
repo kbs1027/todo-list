@@ -52,13 +52,16 @@ function App() {
         중간 사이즈 화면에서 너비 50%, 좌우 마진 자동(가운데 정렬) */}
         <ul>
           {todoList.map((singleTodo) => (
-            <li key={singleTodo.id} className="flex justify-between text-white py-5 px-5 rounded-lg text-2xl mb-5">
+            <li
+              key={singleTodo.id}
+              className="h-center flex justify-between text-white py-5 px-5 rounded-lg text-2xl mb-5"
+            >
               {/* 플렉스박스 레이아웃, 플렉스 아이템들은 최대한 양 끝으로 배치, 텍스트 색상 흰색,
               상하 패딩 1.25rem, 좌우 패딩 1.25rem, 모서리 약간 둥글게, 텍스트 크기 2xl, 마진 하단 1.25rem */}
               {editingId === singleTodo.id ? (
                 <form onSubmit={handleEditForm}>
                   <input
-                    className="w-full p-5 mb-7 text-black text-center placeholder:gray-500 rounded-lg"
+                    className="w-full text-black placeholder:gray-500 rounded-lg"
                     type="text"
                     value={editingText}
                     onChange={(e) => setEditingText(e.target.value)}
